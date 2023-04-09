@@ -22,7 +22,7 @@ public class SimpleSampleCharacterControl : MonoBehaviour
     [SerializeField] private Animator m_animator = null;
     [SerializeField] private Rigidbody m_rigidBody = null;
 
-    [SerializeField] private ControlMode m_controlMode = ControlMode.Direct;
+    [SerializeField] private ControlMode m_controlMode = ControlMode.Tank;
 
     private float m_currentV = 0;
     private float m_currentH = 0;

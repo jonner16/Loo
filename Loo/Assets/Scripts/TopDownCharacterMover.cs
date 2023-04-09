@@ -42,12 +42,13 @@ public class TopDownCharacterMover : MonoBehaviour
         {
             RotateFromMouseVector();
         }
+        
     }
 
-    private void FixedUpdate()
-    {
-        m_animator.SetFloat("MoveSpeed", MovementSpeed);
-    }
+    // private void FixedUpdate()
+    // {
+    //     m_animator.SetFloat("MoveSpeed", MovementSpeed);
+    // }
 
     private void RotateFromMouseVector()
     {
@@ -64,6 +65,7 @@ public class TopDownCharacterMover : MonoBehaviour
     private Vector3 MoveTowardTarget(Vector3 targetVector)
     {
         var speed = MovementSpeed * Time.deltaTime;
+        
         // transform.Translate(targetVector * (MovementSpeed * Time.deltaTime)); Demonstrate why this doesn't work
         //transform.Translate(targetVector * (MovementSpeed * Time.deltaTime), Camera.gameObject.transform);
 
